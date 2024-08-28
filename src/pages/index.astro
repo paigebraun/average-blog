@@ -16,7 +16,7 @@ const posts = (await getCollection("blog")).sort(
     <head>
         <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     </head>
-    <body class="max-w-prose m-auto px-4">
+    <body class="max-w-prose m-auto px-4 dark:bg-zinc-900 dark:text-white">
         <Header />
         <main>
             <section>
@@ -29,12 +29,12 @@ const posts = (await getCollection("blog")).sort(
                                         {post.data.title}
                                     </h1>
                                 </a>
-                                <p class="mb-2 text-gray-600">
+                                <p class="mb-2 text-gray-600 dark:text-zinc-400">
                                     {post.data.description}
                                 </p>
                                 <a
                                     href={`/${post.slug}/`}
-                                    class="font-medium hover:text-gray-600">
+                                    class="hover:font-medium">
                                     Read this article →
                                 </a>
                             </li>

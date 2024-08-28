@@ -1,28 +1,39 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
+import ThemeSwitch from "./ThemeSwitch.astro";
 import { SITE_TITLE } from "../consts";
 ---
 
 <header>
-    <nav class="flex gap-4 my-16">
-        <a href="/">
-            <img
-                class="w-28 h-28"
-                src="/Logo_Transparent.png"
-                alt="avrg logo"
-            />
-        </a>
+    <nav class="flex justify-between">
+        <div class="flex gap-4 my-16">
+            <a href="/">
+                <img
+                    class="w-28 h-28 block dark:hidden"
+                    src="/Logo_Transparent.png"
+                    alt="avrg logo"
+                />
+                <img
+                    class="w-28 h-28 hidden dark:block"
+                    src="/Logo_Transparent_White.png"
+                    alt="avrg logo"
+                />
+            </a>
 
-        <div class="flex flex-col justify-between">
-            <div>
-                <h2 class="text-2xl font-medium"><a>{SITE_TITLE}</a></h2>
-                <p class="text-gray-600">A blog about running</p>
-            </div>
+            <div class="flex flex-col justify-between">
+                <div>
+                    <h2 class="text-2xl font-medium"><a>{SITE_TITLE}</a></h2>
+                    <p class="text-gray-600 dark:text-zinc-400">
+                        A blog about running
+                    </p>
+                </div>
 
-            <div class="internal-links flex gap-4">
-                <HeaderLink href="/">Blog</HeaderLink>
-                <HeaderLink href="/about">About</HeaderLink>
+                <div class="internal-links flex gap-4">
+                    <HeaderLink href="/">Home</HeaderLink>
+                    <HeaderLink href="/about">About</HeaderLink>
+                </div>
             </div>
         </div>
+        <ThemeSwitch />
     </nav>
 </header>
