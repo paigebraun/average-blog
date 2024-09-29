@@ -1,14 +1,15 @@
 ---
-import Layout from "../layouts/BlogPost.astro";
+import BlogLayout from "../layouts/BlogPost.astro";
 ---
 
-<Layout
+<BlogLayout
     title="About AVRG"
     description="Lorem ipsum dolor sit amet"
-    pubDate={new Date("August 26 2024")}>
+    pubDate={new Date("August 26 2024")}
+    heroImage="/ZilkerRelay.png">
     <p>
         AVRG is for the average runners in the world. With a DIY ethos at its
         heart, we hope to empower the average runner, celebrate the elite
         runner, and welcome anyone and everyone in the sport of running.
     </p>
-</Layout>
+</BlogLayout>
