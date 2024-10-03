@@ -48,18 +48,28 @@
             }
         };
 
-        applyTheme();
+        // Function to initialize the theme
+        const initializeTheme = () => {
+            applyTheme();
 
-        document
-            .getElementById("theme-selector")
-            ?.addEventListener("click", () => {
-                if (localStorage.theme === "dark") {
-                    localStorage.theme = "light";
-                    document.documentElement.classList.remove("dark");
-                } else {
-                    localStorage.theme = "dark";
-                    document.documentElement.classList.add("dark");
-                }
-            });
+            document
+                .getElementById("theme-selector")
+                ?.addEventListener("click", () => {
+                    if (localStorage.theme === "dark") {
+                        localStorage.theme = "light";
+                        document.documentElement.classList.remove("dark");
+                    } else {
+                        localStorage.theme = "dark";
+                        document.documentElement.classList.add("dark");
+                    }
+                });
+        };
+
+        // Apply the theme when the DOM is fully loaded
+        document.addEventListener("DOMContentLoaded", () => {
+            initializeTheme();
+        });
+
+        document.addEventListener("astro:after-swap", initializeTheme);
     </script>
 </button>
