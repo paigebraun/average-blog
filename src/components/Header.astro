@@ -28,12 +28,14 @@ import { SITE_TITLE } from "../consts";
                     </p>
                 </div>
 
-                <div class="internal-links flex gap-4">
+                <div class="internal-links flex items-center gap-4">
                     <HeaderLink href="/">Home</HeaderLink>
                     <HeaderLink href="/about">About</HeaderLink>
+                    <div class="md:h-5 md:w-px bg-zinc-900/10 dark:bg-white/15">
+                    </div>
+                    <ThemeSwitch />
                 </div>
             </div>
         </div>
-        <ThemeSwitch />
     </nav>
 </header>
