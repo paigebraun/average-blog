@@ -4,10 +4,9 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
-import FormattedDate from "../components/FormattedDate.astro";
 
-const posts = (await getCollection("blog")).sort(
-    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+const issues = (await getCollection("issues")).sort(
+    (a, b) => b.data.order.valueOf() - a.data.order.valueOf()
 );
 ---
 
@@ -16,26 +15,32 @@ const posts = (await getCollection("blog")).sort(
     <head>
         <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     </head>
-    <body class="max-w-prose m-auto px-4 dark:bg-zinc-900 dark:text-white">
+    <body
+        class="font-display flex flex-col min-h-screen max-w-prose m-auto px-4 dark:bg-zinc-900 dark:text-white">
         <Header />
-        <main>
+        <main class="flex-1">
             <section>
                 <ul>
                     {
-                        posts.map((post) => (
+                        issues.map((issue) => (
                             <li class="mb-8">
-                                <a href={`/${post.slug}/`}>
-                                    <h1 class="text-xl font-bold hover:underline">
-                                        {post.data.title}
+                                <a href={`/${issue.slug}/`}>
+                                    <h1 class="font-issue-heading text-xl font-bold hover:underline">
+                                        {issue.data.title}
                                     </h1>
                                 </a>
-                                <p class="mb-2 text-gray-600 dark:text-zinc-400">
-                                    {post.data.description}
+                                <p class="mb-2 text-zinc-600 dark:text-zinc-400">
+                                    {issue.data.description}
                                 </p>
                                 <a
-                                    href={`/${post.slug}/`}
-                                    class="hover:font-medium">
-                                    Check it out →
+                                    href={`/${issue.slug}/`}
+                                    class="hover:font-medium inline-flex items-center gap-2">
+                                    Check it out
+                                    <span
+                                        aria-hidden="true"
+                                        class="font-display mt-[0.125rem]">
+                                        →
+                                    </span>
                                 </a>
                             </li>
                         ))

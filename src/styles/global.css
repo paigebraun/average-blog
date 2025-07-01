@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Lodeh;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/Lodeh.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Marion;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/Marion.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Marion-Bold;
+  font-style: bold;
+  font-display: swap;
+  src: url("/fonts/Marion-Bold.otf") format("opentype");
+}
+
+.prose {
+    max-width: 80ch;
+}

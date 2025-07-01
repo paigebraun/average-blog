@@ -1,0 +1,59 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import BlogLayout from "../layouts/BlogPost.astro";
+
+export async function getStaticPaths() {
+    const issues = await getCollection("issues");
+    return issues.map((issue: { slug: any }) => ({
+        params: { issue: issue.slug },
+    }));
+}
+
+const issue = Astro.params.issue;
+if (!issue) {
+    throw new Error("Issue parameter is missing.");
+}
+const issueEntry = await getEntry("issues", issue);
+if (!issueEntry) throw new Error(`Issue not found: ${issue}`);
+
+const { title, description, heroImage } = issueEntry.data;
+
+const posts = (await getCollection("blog"))
+    .filter((post) => post.data.issue === issue)
+    .sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+---
+
+<BlogLayout
+    title={title}
+    description={description}
+    heroImage={heroImage}
+    issue={issue}>
+    <ul class="not-prose text-black dark:text-white">
+        {
+            posts.length > 0 ? (
+                posts.map((post) => (
+                    <li class="mb-8">
+                        <a href={`/${post.data.issue}/${post.slug}/`}>
+                            <h1 class="text-xl font-bold hover:underline">
+                                {post.data.title}
+                            </h1>
+                        </a>
+                        {post.data.description && (
+                            <p class="mb-2 text-zinc-600 dark:text-zinc-400">
+                                {post.data.description}
+                            </p>
+                        )}
+                        <a
+                            href={`/${post.data.issue}/${post.slug}/`}
+                            class="hover:font-medium">
+                            Check it out
+                        </a>
+                        <span> →</span>
+                    </li>
+                ))
+            ) : (
+                <li>No posts found for this issue.</li>
+            )
+        }
+    </ul>
+</BlogLayout>

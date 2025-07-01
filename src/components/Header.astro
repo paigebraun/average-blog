@@ -1,6 +1,5 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import ThemeSwitch from "./ThemeSwitch.astro";
 import { SITE_TITLE } from "../consts";
 ---
 
@@ -22,18 +21,19 @@ import { SITE_TITLE } from "../consts";
 
             <div class="flex flex-col justify-between">
                 <div>
-                    <h2 class="text-2xl font-medium"><a>{SITE_TITLE}</a></h2>
-                    <p class="text-gray-600 dark:text-zinc-400">
-                        A blog about running
+                    <h2 class="text-2xl font-heading">
+                        <a>{SITE_TITLE}</a>
+                    </h2>
+                    <p class="text-zinc-600 dark:text-zinc-400">
+                        Empower the average runner.
                     </p>
                 </div>
 
-                <div class="internal-links flex items-center gap-4">
-                    <HeaderLink href="/">Home</HeaderLink>
-                    <HeaderLink href="/about">About</HeaderLink>
-                    <div class="md:h-5 md:w-px bg-zinc-900/10 dark:bg-white/15">
+                <div class="flex items-center gap-4">
+                    <HeaderLink href="/">Releases</HeaderLink>
+                    <div class="md:h-5 md:w-px bg-zinc-300 dark:bg-white/15">
                     </div>
-                    <ThemeSwitch />
+                    <HeaderLink href="/about">About</HeaderLink>
                 </div>
             </div>
         </div>

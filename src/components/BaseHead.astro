@@ -6,7 +6,7 @@ import ViewTransitions from "astro/components/ViewTransitions.astro";
 
 interface Props {
     title: string;
-    description: string;
+    description?: string;
     image?: string;
 }
 
@@ -24,16 +24,16 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <!-- Font preloads -->
 <link
     rel="preload"
-    href="/fonts/atkinson-regular.woff"
+    href="/fonts/Marion.otf"
     as="font"
-    type="font/woff"
+    type="font/otf"
     crossorigin
 />
 <link
     rel="preload"
-    href="/fonts/atkinson-bold.woff"
+    href="/fonts/Marion-Bold.otf"
     as="font"
-    type="font/woff"
+    type="font/otf"
     crossorigin
 />
 
