@@ -1,7 +1,7 @@
 ---
 title: "Get to know the AVRG crew"
 issue: "issue-001"
-heroImage: "/crew.jpg"
+heroImage: "/issue-001/crew.jpg"
 order: 1
 ---
 
@@ -13,7 +13,7 @@ Juliann is... kinda the reason Jordan and Paige both run as much as they do. She
 
 <h1 class="font-heading mt-10">Top picks</h1>
 
-<div class="font-bold mt-6">Best Song to Start Your Race to</div>
+<div class="font-medium mt-6">Best Song to Start Your Race to</div>
 <div class="flex justify-between">
     “Spire” by Glassing
     <span class="text-left">JG</span>
@@ -27,7 +27,7 @@ Juliann is... kinda the reason Jordan and Paige both run as much as they do. She
     <span class="text-left">JB</span>
 </div>
 
-<div class="font-bold mt-6">Most Unexpected Song You Love Running to</div>
+<div class="font-medium mt-6">Most Unexpected Song You Love Running to</div>
 <div class="flex justify-between">
     “How Do I Live” by Leann Rimes
     <span class="text-left">JG</span>
@@ -41,7 +41,7 @@ Juliann is... kinda the reason Jordan and Paige both run as much as they do. She
     <span class="text-left">JB</span>
 </div>
 
-<div class="font-bold mt-6">Your Favorite Place to Run</div>
+<div class="font-medium mt-6">Your Favorite Place to Run</div>
 <div class="flex justify-between">
     Doeskin Ranch (Liberty Hill, TX)
     <span class="text-left">JG</span>
@@ -55,7 +55,7 @@ Juliann is... kinda the reason Jordan and Paige both run as much as they do. She
     <span class="text-left">JB</span>
 </div>
 
-<div class="font-bold mt-6">Current Must-Have Piece of Gear</div>
+<div class="font-medium mt-6">Current Must-Have Piece of Gear</div>
 <div class="flex justify-between">
     Garmin Instinct 2S  
     <span class="text-left">JG</span>
@@ -69,7 +69,7 @@ Juliann is... kinda the reason Jordan and Paige both run as much as they do. She
     <span class="text-left">JB</span>
 </div>
 
-<div class="font-bold mt-6">Best Post-Long-Run Meal or Food</div>
+<div class="font-medium mt-6">Best Post-Long-Run Meal or Food</div>
 <div class="flex justify-between">
     Nervous Charlie’s Bagels
     <span class="text-left">JG</span>

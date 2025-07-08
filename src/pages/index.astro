@@ -5,9 +5,11 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
 
-const issues = (await getCollection("issues")).sort(
-    (a, b) => b.data.order.valueOf() - a.data.order.valueOf()
-);
+const issues = (await getCollection("issues")).sort((a, b) => {
+    const orderA = a.data.order !== undefined ? a.data.order.valueOf() : 0;
+    const orderB = b.data.order !== undefined ? b.data.order.valueOf() : 0;
+    return orderB - orderA;
+});
 ---
 
 <!doctype html>

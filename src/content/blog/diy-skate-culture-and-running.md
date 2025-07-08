@@ -3,7 +3,7 @@ title: "DIY, Skate Culture, and Running"
 description: "In conversation with Brandon Dutra"
 author: "Jordan Gracey"
 issue: "issue-001"
-heroImage: "/brandon.jpg"
+heroImage: "/issue-001/brandon.JPG"
 order: 2
 ---
 
@@ -25,8 +25,10 @@ Continuing on that journey, Brandon ensured he combined what he learned from the
 
 "It's so simple, but everybody overcomplicates it... and they make it their own. I like it because it’s so simple. Like football, you can’t really make it your own, right? But running? You just run. You can literally run anywhere, as fast as you want. Do workouts, long FKTs, whatever. I love the creative, individualistic aspect.
 
+<img class="grayscale" src='/issue-001/brandon-2.avif' />
+
 It’s like skateboarding—a simple thing with endless subgenres and ways to make it your own.
 
-I think that’s why I love it... it feels unlimited.
+<p class="font-issue-heading text-3xl">I think that’s why I love it... <br/>it feels unlimited.</p>
 
 You can shift and alter what you do, and it pushes everyone differently. Just getting out there is the battle. And then you have to have fun with it, or you won’t keep doing it. Maybe it’s stubbornness, but tailoring running into races and creative outlets makes it fun—and finding those niche communities is so gratifying."
