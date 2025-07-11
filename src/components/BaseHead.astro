@@ -11,26 +11,34 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
+const {
+    title,
+    description,
+    image = "/average-blog/blog-placeholder-1.jpg",
+} = Astro.props;
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/Logo_overOffwhite.png" />
+<link
+    rel="icon"
+    type="image/svg+xml"
+    href="/average-blog/Logo_overOffwhite.png"
+/>
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
 <link
     rel="preload"
-    href="/fonts/Marion.otf"
+    href="/average-blog/fonts/Marion.otf"
     as="font"
     type="font/otf"
     crossorigin
 />
 <link
     rel="preload"
-    href="/fonts/Marion-Bold.otf"
+    href="/average-blog/fonts/Marion-Bold.otf"
     as="font"
     type="font/otf"
     crossorigin

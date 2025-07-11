@@ -14,7 +14,8 @@ const headingClass = title?.toLowerCase().startsWith("issue")
 
 // Determine if this is the issue landing page
 const isIssueLandingPage =
-    Astro.props.issue && Astro.url.pathname === `/${Astro.props.issue}/`;
+    Astro.props.issue &&
+    Astro.url.pathname === `/average-blog/${Astro.props.issue}/`;
 ---
 
 <html lang="en">
@@ -30,7 +31,7 @@ const isIssueLandingPage =
             {
                 Astro.props.issue && !isIssueLandingPage && (
                     <a
-                        href={`/${Astro.props.issue}/`}
+                        href={`/average-blog/${Astro.props.issue}/`}
                         class="inline-flex items-center gap-2 text-sm font-issue-heading mb-4 text-zinc-600 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200">
                         <span
                             aria-hidden="true"

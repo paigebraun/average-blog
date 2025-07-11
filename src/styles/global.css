@@ -2,21 +2,21 @@
   font-family: Lodeh;
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/Lodeh.ttf") format("truetype");
+  src: url("/average-blog/fonts/Lodeh.ttf") format("truetype");
 }
 
 @font-face {
   font-family: Marion;
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/Marion.otf") format("opentype");
+  src: url("/average-blog/fonts/Marion.otf") format("opentype");
 }
 
 @font-face {
   font-family: Marion-Bold;
   font-style: bold;
   font-display: swap;
-  src: url("/fonts/Marion-Bold.otf") format("opentype");
+  src: url("/average-blog/fonts/Marion-Bold.otf") format("opentype");
 }
 
 .prose {
