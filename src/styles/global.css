@@ -19,6 +19,13 @@
   src: url("/average-blog/fonts/Marion-Bold.otf") format("opentype");
 }
 
+@font-face {
+  font-family: Cinzel-bold;
+  font-style: bold;
+  font-display: swap;
+  src: url("/average-blog/fonts/Cinzel-Bold.otf") format("opentype");
+}
+
 .prose {
     max-width: 80ch;
 }
