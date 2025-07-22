@@ -26,7 +26,7 @@ const issues = (await getCollection("issues")).sort((a, b) => {
                     {
                         issues.map((issue) => (
                             <li class="mb-8">
-                                <a href={`/average-blog/${issue.slug}/`}>
+                                <a href={`/${issue.slug}/`}>
                                     <h1 class="font-issue-heading text-xl font-bold hover:underline">
                                         {issue.data.title}
                                     </h1>
@@ -35,7 +35,7 @@ const issues = (await getCollection("issues")).sort((a, b) => {
                                     {issue.data.description}
                                 </p>
                                 <a
-                                    href={`/average-blog/${issue.slug}/`}
+                                    href={`/${issue.slug}/`}
                                     class="hover:font-medium inline-flex items-center gap-2">
                                     Check it out
                                     <span

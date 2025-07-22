@@ -33,8 +33,7 @@ const posts = (await getCollection("blog"))
             posts.length > 0 ? (
                 posts.map((post) => (
                     <li class="mb-8">
-                        <a
-                            href={`/average-blog/${post.data.issue}/${post.slug}/`}>
+                        <a href={`/${post.data.issue}/${post.slug}/`}>
                             <h1 class="text-xl font-bold hover:underline">
                                 {post.data.title}
                             </h1>
@@ -45,7 +44,7 @@ const posts = (await getCollection("blog"))
                             </p>
                         )}
                         <a
-                            href={`/average-blog/${post.data.issue}/${post.slug}/`}
+                            href={`/${post.data.issue}/${post.slug}/`}
                             class="hover:font-medium">
                             Check it out
                         </a>
