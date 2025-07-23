@@ -1,7 +1,7 @@
 ---
 title: "Get to know the AVRG crew"
 issue: "issue-001"
-heroImage: "/issue-001/crew.jpg"
+heroImage: "/issue-001/crew.webp"
 order: 1
 ---
 
