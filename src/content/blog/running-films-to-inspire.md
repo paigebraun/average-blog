@@ -35,4 +35,6 @@ Actually, it kinda gets heavier as it goes, so you can taper up to it a little.
 
 Each issue, the genre will differ, too. So if this isn’t your jam, come back next issue!
 
-<img class="grayscale" src='/issue-001/spotify.webp' />
+<br />
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2U2b2slt3vWgrNcp5ryqlW?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
