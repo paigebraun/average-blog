@@ -3,7 +3,7 @@ title: "Accidentally Became a Runner, Oops"
 issue: "issue-001"
 author: "Paige Braun"
 heroImage: "/issue-001/paige_running.webp"
-order: 4
+order: 5
 ---
 
 <p class="font-medium text-3xl">“I would rather die than run for exercise”</p>

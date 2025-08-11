@@ -3,7 +3,7 @@ title: "On Running and Philosophy"
 author: "Juliann Braun"
 issue: "issue-001"
 heroImage: "/issue-001/juliann_running.webp"
-order: 5
+order: 6
 ---
 
 To run is to practice radical acceptance.

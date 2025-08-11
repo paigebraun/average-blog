@@ -8,9 +8,10 @@ import { ClientRouter } from "astro:transitions";
 type Props = CollectionEntry<"blog">["data"];
 
 const { title, description, heroImage, author } = Astro.props;
-const headingClass = title?.toLowerCase().startsWith("issue")
-    ? "font-issue-heading"
-    : "font-heading";
+const headingClass =
+    title?.toLowerCase().startsWith("issue") && title?.length < 10
+        ? "font-issue-heading"
+        : "font-heading";
 
 // Determine if this is the issue landing page
 const isIssueLandingPage =

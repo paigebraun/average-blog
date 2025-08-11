@@ -23,18 +23,3 @@ A gritty and inspiring look into Max Joliffe’s 2024 Moab 240 race in Utah.
 Follow his journey from pre-race to the finish line, as he takes on his first 200+ mile effort in a dramatic fashion.
 
 <a class="hover:font-medium no-underline italic" target="_blank" href="https://www.youtube.com/watch?v=euOpy884bgQ">Watch here</a> <span>→<span>
-<br />
-
-<h1 class="font-heading mt-10">Issue 001 Playlist</h1>
-
-This is a playlist to run to.
-
-If you like heavier music, it’s not ALL going to be heavy, but some of it is.
-
-Actually, it kinda gets heavier as it goes, so you can taper up to it a little.
-
-Each issue, the genre will differ, too. So if this isn’t your jam, come back next issue!
-
-<br />
-
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2U2b2slt3vWgrNcp5ryqlW?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

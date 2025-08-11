@@ -39,16 +39,23 @@ const posts = (await getCollection("blog"))
                             </h1>
                         </a>
                         {post.data.description && (
-                            <p class="mb-2 text-zinc-600 dark:text-zinc-400">
+                            <p class="text-zinc-600 dark:text-zinc-400">
                                 {post.data.description}
                             </p>
                         )}
-                        <a
-                            href={`/${post.data.issue}/${post.slug}/`}
-                            class="hover:font-medium">
-                            Check it out
-                        </a>
-                        <span> →</span>
+                        {post.data.author && (
+                            <p class="italic text-zinc-600 dark:text-zinc-400">
+                                By {post.data.author}
+                            </p>
+                        )}
+                        <div class="mt-1">
+                            <a
+                                href={`/${post.data.issue}/${post.slug}/`}
+                                class="hover:font-medium">
+                                Check it out
+                            </a>
+                            <span> →</span>
+                        </div>
                     </li>
                 ))
             ) : (
